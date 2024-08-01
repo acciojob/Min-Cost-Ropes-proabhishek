@@ -2,7 +2,7 @@
 function mincost(arr) {
     // Create a min-heap to efficiently get the two smallest elements
     let heap = [...arr];
-    heap.sort((a, b) => a - b);
+    // heap.sort((a, b) => a - b);
     
     let totalCost = 0;
     
@@ -20,7 +20,7 @@ function mincost(arr) {
         heap.push(combined);
         
         // Re-sort the heap
-        heap.sort((a, b) => a - b);
+        // heap.sort((a, b) => a - b);
    }
 	return totalCost;
 }
